@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+
+</head>
+<body>
+
+<!--Main-->
+    <div class="main-section" id="home">
+    <div class="header">
+        <div class="navbar">
+            <div class="title"><b>PORT</b><span>FOLIO</span></div>
+        <div class="listbar">
+       
+            <ul class="list">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#About">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div></div></div> 
+
+         <div class="main-heading">
+            <p>Hello, my name is</p>
+            <h2>AGRAJ ADHIKARI</h2>
+            <p>And I'm a <span>Web Developer</span></p>
+            <button><a href="#About">About Me</a> </button>
+         </div>
+        </div>
+
+<!--About-ME-->
+    <div class="About-me" id="About">
+        <div class="About-heading">
+            <h3>About me</h3>
+            <b class="Aboutsub-title"><span></span> Who I'm <span></span></b>  
+        </div>
+
+        <div class="About-main">
+
+        <img src="hero.png" height="500px" width="500px">
+
+        <div class="About-para">
+        <p id="para-head">I'm Agraj Adhikari and i'm <span>UI/UX developer</span>.</p>
+
+        <p id="para-second">I am Agraj. A programmer, Web Developer, Software Developer and a Game Developer. I was learn programming at my age 17. Now I am a professional programmer </p>
+
+        <button><a href="#skills">My Skills</a></a></button>
+    </div>
+    </div>
+    </div>
+
+<!--My Skills-->
+<div class="skills-section" id="skills">
+    <h3>My Skills</h3>
+    <b class="skillsub-title"><span></span> What I Provide <span></span></b>
+    <div class="skills-cards">
+        <div class="skill-card">
+            <i class="fas fa-paint-brush"></i>
+            <h4>Web Design</h4>
+            <p>HTML, CSS, JavaScript</p>
+        </div>
+        <div class="skill-card">
+            <i class="fas fa-chart-line"></i>
+            <h4>Software Development</h4>
+            <p>Python, C++, React.js</p>
+        </div>
+        <div class="skill-card">
+            <i class="fas fa-code"></i>
+            <h4>Game Development</h4>
+            <p>Web-based Games</p>
+        </div>
+    </div>
+</div>
+
+<!--Contact-->
+
+<div class="contact">
+    <h3>Contact Me</h3>
+    <b class="Aboutsub-title"><span></span> get in touch <span></span></b>  
+</div>
+
+<div class="contact-section" id="contact">
+    <div class="contact-wrapper">
+        <div class="contact-info">
+            <h2>Get in Touch</h2>
+            <p>If you want an advice, Contact Me</p>
+            <div class="info-item">
+                <i class="fas fa-user"></i>
+                <span>Name:</span>
+                <p>Agraj Adhikari</p>
+            </div>
+            <div class="info-item">
+                <i class="fas fa-map-marker-alt"></i>
+                <span>Address:</span>
+                <p>Nepal-Butwal</p>
+            </div>
+            <div class="info-item">
+                <i class="fas fa-envelope"></i>
+                <span>Email:</span>
+                <p>Test01@gmail.com</p>
+            </div>
+        </div>
+        <div class="contact-message">
+            <h3>Message Me</h3>
+            <button class="contact-btn">Contact</button>
+        </div>
+    </div>
+</div>
+
+  
+<!-- footer -->
+<footer>
+    <span>Created By <a href="#home">Agraj Adhikari</a> | <span class="far fa-copyright"></span> All rights reserved.</span>
+</footer>
+
+
+<script>
+    document.addEventListener('scroll', () =>{
+        const header = document.querySelector('.header');
+
+        if(window.scrollY > 0){
+            header.classList.add('scrolled');
+        }else{
+            header.classList.remove('scrolled');
+        }
+    })
+</script>
+        
+</body>
+</html>
